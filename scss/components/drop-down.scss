@@ -1,0 +1,129 @@
+.drop-down-toggle {
+	position: relative;
+	display: inline-block;
+}
+div.drop-down {
+	padding: 8px;
+	white-space: normal;
+	hr {
+		margin-left: -8px;
+		margin-right: -8px;
+	}
+}
+.drop-down {
+	position: absolute;
+	top: 100%;
+	z-index: 9;
+	display: none;
+	list-style: none;
+	overflow: visible;
+	padding: 4px 0;
+	white-space: nowrap;
+	&.anchor-left {
+		left: 0px;
+		&.tip {
+			margin-top: 8px;
+			border-top-left-radius: 0px;
+			&:before {
+				content: '';
+				top: -8px;
+				left: 3px;
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				z-index: -1;
+			}
+		}
+	}
+	&.anchor-right {
+		right: 0px;
+		&.tip {
+			margin-top: 8px;
+			border-top-right-radius: 0px;
+			&:before {
+				content: '';
+				top: -8px;
+				right: 3px;
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				z-index: -1;
+			}
+		}
+	}
+	&.anchor-top {
+		top: auto;
+		bottom: 100%;
+		&.anchor-left {
+			left: 0px;
+			&.tip {
+				margin-top: 0px;
+				margin-bottom: 8px;
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 0px;
+				&:before {
+					content: '';
+					top: auto;
+					bottom: -8px;
+					left: 3px;
+					width: 16px;
+					height: 16px;
+					position: absolute;
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+					z-index: -1;
+				}
+			}
+		}
+		&.anchor-right {
+			right: 0px;
+			&.tip {
+				margin-top: 0px;
+				margin-bottom: 8px;
+				border-top-right-radius: 4px;
+				border-bottom-left-radius: 0px;
+				&:before {
+					content: '';
+					top: auto;
+					bottom: -8px;
+					right: 3px;
+					width: 16px;
+					height: 16px;
+					position: absolute;
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+					z-index: -1;
+				}
+			}
+		}
+	}
+	&.width-xsmall {
+		width: 160px
+	}
+	&.width-small {
+		width: 256px;
+	}
+	&.width-medium {
+		width: 320px
+	}
+	&.width-large {
+		width: 480px;
+	}
+	&.width-xlarge {
+		wdith: 600px;
+	}
+	li {
+		a {
+			padding: 8px 16px;
+			display: block;
+		}
+	}
+	hr {
+		margin-left: -4px;
+		margin-right: -4px;
+	}
+}

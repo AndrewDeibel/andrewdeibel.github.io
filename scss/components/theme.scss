@@ -1,0 +1,201 @@
+// Colors	
+	$green: 	rgb(80, 160, 50);
+	$blue: 		rgb(70, 130, 240);
+	$purple: 	rgb(115, 70, 180);
+	$red: 		rgb(220, 30, 30);
+	$orange: 	rgb(255, 90, 0);
+	$yellow: 	rgb(255, 180, 20);
+	$white: 	rgb(255, 255, 255);
+	$grey: 		rgb(125, 125, 125);
+	$black: 	rgb(0, 0, 0);
+	$success: 	$green;
+	$info: 		$blue;
+	$warning: 	$orange;
+	$alert: 	$red;
+
+// Device Sizes
+	$large: 	1024px;
+	$medium: 	768px;
+	$small: 	480px;
+	$max: 		1024px;
+
+// Font
+	$font: 'Maven Pro', sans-serif;
+	$font-size: 14px;
+
+// Base
+	body {
+		color: $black;
+		background: $white;
+		position: relative;
+		z-index: -2;
+	}
+	a {
+		color: lighten($black, 10%);
+
+		&:hover {
+			color: $blue;
+		}
+	}
+	hr {
+		border-bottom: 1px solid darken($white, 25%);
+	}
+	
+// Page Width
+	.max {
+		max-width: $max;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+// Logo
+	.logo {
+		float: left;
+		a {
+			padding: 0px 16px;
+			line-height: 64px;
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: bold;
+			&:hover {
+				color: rgb(100, 100, 100);
+			}
+		}
+	}
+
+// Header
+	header {
+		background: white;
+		height: 64px;
+	}
+
+// Nav
+	nav {
+		float: right;
+		li {
+			float: left;
+			a {
+				line-height: 64px;
+				margin-left: 32px;
+				text-transform: uppercase;
+				&:hover {
+					color: rgb(100, 100, 100);
+				}
+			}
+		}
+	}
+
+// Slier
+	ul.slider li.slide {
+		max-height: 400px;
+	}
+	ul.slider li.slide .caption {
+		background: rgba(0, 0, 0, 0.5);
+		color: rgb(255, 255, 255);
+	}
+	.slider {
+		border-top: 1px dashed $blue;
+	}
+	.slide {
+		padding: 128px 0 32px 0;
+	}
+	#slide-1 {
+		background: $blue;
+		color: white;
+	}
+	.dots {
+		text-align: center;
+		margin-top: 96px;
+		li {
+			display: inline-block;
+		}
+		a {
+			background: white;
+			border-radius: 50%;
+			width: 16px;
+			height: 16px;
+			&.active {
+				background: lighten($blue, 10%);
+			}
+		}
+	}
+
+// Tagline
+	.tagline {
+		background: rgb(20, 20, 20);
+		color: white;
+		overflow: auto;
+		text-align: center;
+		padding: 32px 0;
+	}
+
+// About
+	.about {
+		background: rgb(53, 53, 53);
+		color: white;
+		overflow: auto;
+		padding: 32px 0;
+	}
+
+// Table
+	.table table {
+		background: light(black, 20%);
+	}
+
+// Drop-downs
+	.drop-down {
+		background: $white;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+		border: 1px solid darken($white, 20%);
+		&:before {
+			background: $white;
+			box-shadow: -1px -1px darken($white, 20%);
+		}
+		&.anchor-top:before {
+			box-shadow: 1px 1px darken($white, 20%);
+		}
+		a {
+			color: $black;
+			&:hover {
+				background: $blue;
+				color: $white;
+			}
+		}
+	}
+
+// Footer
+	.pre-footer .column:not(:last-child) {
+		border-right: 1px solid darken($white, 50%);
+	}
+	.footer {
+		background: rgb(50, 50, 50);
+	}
+	.footer a {
+		color: rgba(255, 255, 255, 0.9);
+	}
+	.footer a:hover {
+		color: rgba(255, 255, 255, 1);
+	}
+
+// Round
+	.round {
+		border-radius: 4px;
+
+		&.top {
+			border-radius: 4px 4px 0px 0px;
+		}
+
+		&.right {
+			border-radius: 0px 4px 4px 0px;
+		}
+
+		&.bottom {
+			border-radius: 0px 0px 4px 4px;
+		}
+
+		&.left {
+			border-radius: 4px 0px 0px 4px;
+		}
+	}
