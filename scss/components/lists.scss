@@ -1,0 +1,32 @@
+.tree {
+	display: inline-block;
+	li {
+		cursor: pointer;
+		@include user-select;
+	}
+	.node {
+		@include transition;
+		&:hover {
+			background: rgba(0,0,0,0.1);
+			box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.2);
+			border-radius: 4px;
+		}
+	}
+	ul {
+		margin-left: 32px;
+		li {
+			position: relative;
+			&:after {
+				display: block;
+				content: '';
+				position: absolute;
+				border-left: 1px solid rgba(0,0,0,0.2);
+				border-bottom: 1px solid rgba(0,0,0,0.2);
+				width: 16px;
+				height: 16px;
+				left: -8px;
+				top: -8px;
+			}
+		}
+	}
+}

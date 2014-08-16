@@ -16,12 +16,3 @@
 		padding: 8px;
 	}
 }
-.fullscreen {
-	vertical-align: middle;
-	&:before {
-		content: '';
-		display: inline-block;
-		height: 100%;
-		vertical-align: middle;
-	}
-}

@@ -1,32 +1,35 @@
 @import
+"components/mixins",
 "components/reset",
 "components/theme",
 "components/base",
 "components/grid",
+"components/spacing",
 
+"components/main",
 "components/menu",
-"components/header",
 "components/banner",
 "components/feature",
+"components/profile",
 "components/panels",
+"components/lists",
 "components/callouts",
-"components/footer",
+"components/notifications",
 
+"components/buttons",
 "components/inputs",
 "components/input-groups",
-"components/buttons",
 "components/drop-down",
+"components/tooltips",
+"components/icons",
 
 "components/table",
-"components/tabs",
 "components/pager",
 "components/wizard",
+"components/breadcrumbs",
+"components/tags",
+"components/comments",
 
-"components/slider",
-"components/thumbnails",
 "components/lightbox",
-"components/modal",
-"components/tooltips",
-
-"components/shapes",
-"components/parallax";
+"components/slider",
+"components/modal";

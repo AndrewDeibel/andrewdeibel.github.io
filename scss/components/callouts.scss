@@ -5,59 +5,100 @@
 	background: rgb(245,245,245);
 	margin-top: 16px;
 	margin-bottom: 16px;
-
+	position: relative;
+	overflow: hidden;
 	p {
 		margin: 0;
+		z-index: 1;
+		position: relative;
 	}
-
+	svg.icon-cancel {
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		cursor: pointer;
+		width: 14px;
+		height: 14px;
+		opacity: 1;
+		margin: 0px;
+		left: auto;
+	}
+	svg {
+		top: 50%;
+		left: 0px;
+		margin-top: -64px;
+		width: 128px;
+		height: 128px;
+		position: absolute;
+		z-index: 0;
+		opacity: 0.2;
+	}
 	@for $index from 1 through 6 {
 		h#{$index} {
 			font-weight: 400;
-			margin-top: 0px;
+			margin: 0px;
+			z-index: 1;
+			position: relative;
 		}
 	}
-
 	&.warning {
 		background: mix($orange, $white, 10%);
 		border-left-color: $orange;
-
 		@for $index from 1 through 6 {
 			h#{$index} {
 				color: $orange;
 			}
 		}
+		p {
+			color: lighten($orange, 15%);
+		}
+		svg {
+			fill: lighten($orange, 15%);
+		}
 	}
-
 	&.danger {
 		background: mix($red, $white, 10%);
 		border-left-color: $red;
-
 		@for $index from 1 through 6 {
 			h#{$index} {
 				color: $red;
 			}
 		}
+		p {
+			color: lighten($red, 15%);
+		}
+		svg {
+			fill: lighten($red, 15%);
+		}
 	}
-
 	&.success {
 		background: mix($green, $white, 10%);
 		border-left-color: $green;
-
 		@for $index from 1 through 6 {
 			h#{$index} {
 				color: $green;
 			}
 		}
+		p {
+			color: lighten($green, 15%);
+		}
+		svg {
+			fill: lighten($green, 15%);
+		}
 	}
-
 	&.info {
 		background: mix($blue, $white, 10%);
 		border-left-color: $blue;
-
 		@for $index from 1 through 6 {
 			h#{$index} {
 				color: $blue;
 			}
+		}
+		p {
+			color: lighten($blue, 15%);
+		}
+		svg {
+			fill: lighten($blue, 15%);
 		}
 	}
 }

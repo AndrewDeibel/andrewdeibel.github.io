@@ -1,0 +1,107 @@
+// Border radius all corners
+@mixin border-radius($radius: 4px) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+// Border radius top
+@mixin border-top-radius($radius: 4px) {
+	-webkit-border-top-left-radius: $radius;
+	-webkit-border-top-right-radius: $radius;
+	-moz-border-top-left-radius: $radius;
+	-moz-border-top-right-radius: $radius;
+	border-top-left-radius: $radius;
+	border-top-right-radius: $radius;
+}
+// Border radius right
+@mixin border-right-radius($radius: 4px) {
+	-webkit-border-top-right-radius: $radius;
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-top-right-radius: $radius;
+	-moz-border-bottom-right-radius: $radius;
+	border-top-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+}
+// Border radius bottom
+@mixin border-bottom-radius($radius: 4px) {
+	-webkit-border-bottom-right-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-bottom-right-radius: $radius;
+	-moz-border-bottom-left-radius: $radius;
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+// Border radius left
+@mixin border-left-radius($radius: 4px) {
+	-webkit-border-top-left-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-top-left-radius: $radius;
+	-moz-border-bottom-left-radius: $radius;
+	border-top-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+// Gradient
+@mixin gradient($start-color: darken($white, 20%), $end-color: $white) {
+	background: $start-color;
+	background: -webkit-gradient(linear, left top, left bottom, from($start-color), to($end-color));
+	background: -webkit-linear-gradient(top, $start-color, $end-color);
+	background: -moz-linear-gradient(top, $start-color, $end-color);
+	background: -ms-linear-gradient(top, $start-color, $end-color);
+	background: -o-linear-gradient(top, $start-color, $end-color);
+}
+// Box sizing
+@mixin box-sizing($type: border-box) {
+	-webkit-box-sizing: $type;
+	-moz-box-sizing: $type;
+	box-sizing: $type;
+}
+// Opacity
+@mixin opacity($opacity: 0.5) {
+	-webkit-opacity: $opacity;
+	-moz-opacity: $opacity;
+	opacity: $opacity;
+}
+// Box shadow
+@mixin box-shadow($x: 0px, $y: 1px, $blue: 4px, $spread: 0px, $alpha: 0.25, $inset: false) {
+	@if $inset {
+		-webkit-box-shadow: inset $x $y $blue $spread rgba(0, 0, 0, $alpha);
+		-moz-box-shadow: inset $x $y $blue $spread rgba(0, 0, 0, $alpha);
+		box-shadow: inset $x $y $blue $spread rgba(0, 0, 0, $alpha);
+	} @else {
+		-webkit-box-shadow: $x $y $blue $spread rgba(0, 0, 0, $alpha);
+		-moz-box-shadow: $x $y $blue $spread rgba(0, 0, 0, $alpha);
+		box-shadow: $x $y $blue $spread rgba(0, 0, 0, $alpha);
+	}
+}
+// Transition
+@mixin transition($property: all, $time: 0.1s, $method: ease) {
+	-webkit-transition: $property $time $method;
+	-moz-transition: $property $time $method;
+	-ms-transition: $property $time $method;
+	-o-transition: $property $time $method;
+	transition: $property $time $method;
+}
+// Rotate
+@mixin rotate($degrees) {
+	-webkit-transform: rotate($degrees);
+	-moz-transform: rotate($degrees);
+	-ms-transform: rotate($degrees);
+	-o-transform: rotate($degrees);
+	transform: rotate($degrees);
+}
+// Blur
+@mixin blur($blur: 4px) {
+	-webkit-filter: blur($blur);
+	-moz-filter: blur($blur);
+	-ms-filter: blur($blur);
+	-o-filter: blur($blur);
+	filter: blur($blur);
+}
+// User select
+@mixin user-select() {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}

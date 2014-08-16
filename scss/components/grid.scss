@@ -1,122 +1,144 @@
+//
+// 12 unit grid system for responsive layouts
+//
+
+@for $i from 1 through 12 {
+	.xlarge-#{$i}:not(.grid) {
+		width: percentage($i/12);
+	}
+}
+
 .grid {
-	overflow: hidden;
-	zoom: 1;
+	// Clear after grid to prevent float wrapping
 	&:before, &:after {
-		content: " ";
+		content: '';
 		display: table;
 	}
 	&:after {
 		clear: both;
 	}
+	// Set all columns to float side by side
 	.col {
 		float: left;
-		-webkit-transition: all ease .25s;
-	    -moz-transition: all ease .25s;
-	    -o-transition: all ease .25s;
-	    transition: all ease .25s;
+		@include transition(all, .25s, ease);
 	}
-	&.padded-small {
-		margin: -4px;
+
+
+	// Fluid/dynamic
+	&.fluid {
+		display: table;
+		width: 100%;
+		border-collapse: collapse;
 		.col {
-			padding: 4px;
+			display: table-cell;
+			float: none;
+			white-space: nowrap;
+			&.static {
+
+			}
+			&.dynamic {
+				width: 100%;
+			}
 		}
 	}
-	&.padded-medium, &.padded {
+
+
+	// Padding
+	// From xsmall to xlarge create padding and negative margin
+	$paddings: 32px, 16px, 8px, 4px, 2px;
+	@for $i from 1 through length($sizes) {
+		&.padded-#{nth($sizes, $i)} {
+			margin: -(nth($paddings, $i));
+			.col {
+				padding: nth($paddings, $i);
+			}
+		}
+	}
+	&.padded {
 		margin: -8px;
 		.col {
 			padding: 8px;
 		}
 	}
-	&.padded-large {
-		margin: -16px;
-		.col {
-			padding: 16px;
-		}
-	}
-	&.padded-xlarge {
-		margin: -32px;
-		.col {
-			padding: 32px;
-		}
-	}
-	&.padded-xxlarge {
-		margin: -64px;
-		.col {
-			padding: 64px;
-		}
-	}
+
+
 	// Row based grid
+	// For all screen sizes wrap a max-width and for all col sizes generate percentages
 	@for $i from 1 through 12 {
-		&.large-#{$i} .col { width: percentage($i/12) };
-	}
-	@media (max-width: $medium) {
-		@for $i from 1 through 12 {
-			&.medium-#{$i} .col { width: percentage($i/12) };
+		&.xlarge-#{$i} .col {
+			width: percentage($i/12);
 		}
 	}
-	@media (max-width: $small) {
-		@for $i from 1 through 12 {
-			&.small-#{$i} .col { width: percentage($i/12) };
+	@for $i from 1 through length($screen-sizes) {
+		@media (max-width: #{nth($screen-sizes, $i)}) {
+			@for $ii from 1 through 12 {
+				&.#{nth($sizes, $i)}-#{$ii} .col {
+					width: percentage($ii/12);
+				}
+			}
 		}
 	}
+
+
 	// Column based grid
-	@for $i from 1 through 12 {
-		.large-#{$i} { width: percentage($i/12) };
-	}
-	@media (max-width: $medium) {
-		@for $i from 1 through 12 {
-			.medium-#{$i} { width: percentage($i/12) };
-		}
-	}
-	@media (max-width: $small) {
-		@for $i from 1 through 12 {
-			.small-#{$i} { width: percentage($i/12) };
-		}
-	}
-
-	&.fluid {
-		display: table;
-		min-width: 100%;
-		.column {
-			display: table-cell;
-			vertical-align: top;
-			float: none;
-
-			&.fluid {
-				width: 100%
-			}
-
-			&.static {
-
+	// For all screen sizes wrap a max-width and for all col sizes generate percentages
+	@for $i from 1 through length($screen-sizes) {
+		@media (max-width: #{nth($screen-sizes, $i)}) {
+			@for $ii from 1 through length($sizes) {
+				.#{nth($sizes, $ii)}:not(.grid) {
+					width: percentage($ii/12);
+				}
 			}
 		}
 	}
 
-	.large-clear {
+
+	// Clearing
+	// Responsive clearing when you need a certain column to new-line
+	.clear-xxlarge {
 		clear: both;
 	}
-	@media (max-width: $medium) {
-		.medium-clear {
+	@media (max-width: $screen-xlarge) {
+		.clear-xlarge {
 			clear: both;
 		}
 	}
-	@media (max-width: $small) {
-		.small-clear {
+	@media (max-width: $screen-large) {
+		.clear-large {
+			clear: both;
+		}
+	}
+	@media (max-width: $screen-medium) {
+		.clear-medium {
+			clear: both;
+		}
+	}
+	@media (max-width: $screen-small) {
+		.clear-small {
+			clear: both;
+		}
+	}
+	@media (max-width: $screen-xsmall) {
+		.clear-xsmall {
 			clear: both;
 		}
 	}
 }
 
-@for $i from 1 through 12 {
-	.large-#{$i}:not(.grid) { width: percentage($i/12) };
-}
-@media (max-width: $medium) {
-	@for $i from 1 through 12 {
-		.medium-#{$i}:not(.grid) { width: percentage($i/12) };
+
+// Resonsive widths independent of grid
+// For all screen sizes wrap a max-width and for all col sizes generate percentages
+@for $i from 1 through length($screen-sizes) {
+	@media (max-width: #{nth($screen-sizes, $i)}) {
+		@for $ii from 1 through 12 {
+			.#{nth($sizes, $i)}-#{$ii}:not(.grid) {
+				width: percentage($ii/12);
+			}
+		}
 	}
 }
-@media (max-width: $small) {
-	@for $i from 1 through 12 {
-		.small-#{$i}:not(.grid) { width: percentage($i/12) };
+@for $i from 1 through 12 {
+	.width-#{$i} {
+		width: percentage($i/12);
 	}
 }

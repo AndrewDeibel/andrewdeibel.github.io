@@ -40,27 +40,50 @@
 		position: relative;
 		text-align: left;
 		.modal-close {
-			width: 22px;
-			height: 22px;
+			width: 26px;
+			height: 26px;
 			color: darken(white, 25%);
 			position: absolute;
-			top: 2px;
-			right: 2px;
+			top: 0px;
+			right: 0px;
 			font-weight: bold;
 			line-height: 22px;
 			text-align: center;
 			font-size: 19px;
-			-webkit-transform:rotate(45deg);
-			-moz-transform:rotate(45deg);
-			-ms-transform:rotate(45deg);
-			-o-transform:rotate(45deg);
-			transform:rotate(45deg);
 			cursor: pointer;
 			-webkit-user-select: none;
 			-moz-user-select: none;
 			-ms-user-select: none;
 			-o-user-select: none;
 			user-select: none;
+			opacity: 0.25;
+			&:hover {
+				background: rgba(0,0,0,0.2);
+				border-top-right-radius: 6px;
+				opacity: 0.5;
+			}
+			&:before {
+				@include rotate(45deg);
+				content: '';
+				display: block;
+				position: absolute;
+				width: 16px;
+				height: 2px;
+				background: black;
+				bottom: 12px;
+				left: 5px;
+			}
+			&:after {
+				@include rotate(-45deg);
+				content: '';
+				display: block;
+				position: absolute;
+				width: 16px;
+				height: 2px;
+				background: black;
+				bottom: 12px;
+				left: 5px;
+			}
 		}
 	}
 	.modal-content {
@@ -69,7 +92,7 @@
 	}
 	.modal-footer {
 		border-top: 1px solid darken(white, 10%);
-		padding: 16px;
+		padding: 8px;
 		border-bottom-left-radius: 6px;
 		border-bottom-right-radius: 6px;
 		text-align: right;

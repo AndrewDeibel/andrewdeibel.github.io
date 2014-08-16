@@ -1,0 +1,25 @@
+$spacing-names: xlarge, large, medium, small, xsmall;
+$spacing-sizes: 32px, 16px, 8px, 4px, 2px;
+
+ @for $i from 1 through length($spacing-names) {
+ 	.margin-#{nth($spacing-names, $i)} {margin: nth($spacing-sizes, $i) !important}
+ 	.margin-top-#{nth($spacing-names, $i)} {margin-top: nth($spacing-sizes, $i) !important}
+ 	.margin-right-#{nth($spacing-names, $i)} {margin-right: nth($spacing-sizes, $i) !important}
+ 	.margin-bottom-#{nth($spacing-names, $i)} {margin-bottom: nth($spacing-sizes, $i) !important}
+ 	.margin-left-#{nth($spacing-names, $i)} {margin-left: nth($spacing-sizes, $i) !important}
+ 	.padding-#{nth($spacing-names, $i)} {padding: nth($spacing-sizes, $i) !important}
+ 	.padding-top-#{nth($spacing-names, $i)} {padding-top: nth($spacing-sizes, $i) !important}
+ 	.padding-right-#{nth($spacing-names, $i)} {padding-right: nth($spacing-sizes, $i) !important}
+ 	.padding-bottom-#{nth($spacing-names, $i)} {padding-bottom: nth($spacing-sizes, $i) !important}
+ 	.padding-left-#{nth($spacing-names, $i)} {padding-left: nth($spacing-sizes, $i) !important}
+ }
+.margin {@extend .margin-medium}
+.margin-top {@extend .margin-top-medium}
+.margin-right {@extend .margin-right-medium}
+.margin-bottom {@extend .margin-bottom-medium}
+.margin-left {@extend .margin-left-medium}
+.padding {@extend .padding-medium}
+.padding-top {@extend .padding-top-medium}
+.padding-right {@extend .padding-right-medium}
+.padding-bottom {@extend .padding-bottom-medium}
+.padding-left {@extend .padding-left-medium}
