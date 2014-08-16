@@ -29,7 +29,8 @@ $max: 		1024px;
 $sizes: xlarge, large, medium, small, xsmall;
 
 // Font
-$font: sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+$font: 'Source Sans Pro', sans-serif;
 $font-size: 14px;
 
 // Border-radius
@@ -41,8 +42,6 @@ body {
 	background: $white;
 	position: relative;
 	z-index: -2;
-	// fixed menu offset
-	padding-top: 48px;
 }
 a {
 	color: lighten($black, 10%);
@@ -70,6 +69,10 @@ hr {
 		left: 0;
 		position: absolute;
 	}
+}
+
+.bg-image {
+	background: url(../img/triangles.jpg) no-repeat center;
 }
 
 // Page Width
@@ -151,9 +154,6 @@ ul.slider li.slide .caption {
 }
 
 // Footer
-.footer {
-	background: rgb(50, 50, 50);
-}
 .footer a {
 	color: rgba(255, 255, 255, 0.9);
 }

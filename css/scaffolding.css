@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 html, body,
 div, span, i,
 h1, h2, h3, h4, .banner p, h5, h6,
@@ -24,8 +25,7 @@ body {
   color: black;
   background: white;
   position: relative;
-  z-index: -2;
-  padding-top: 48px; }
+  z-index: -2; }
 
 a {
   color: #1a1a1a; }
@@ -48,6 +48,9 @@ hr {
     bottom: 0;
     left: 0;
     position: absolute; }
+
+.bg-image {
+  background: url(../img/triangles.jpg) no-repeat center; }
 
 .max {
   max-width: 1024px;
@@ -106,9 +109,6 @@ ul.slider li.slide .caption {
       background: #4682f0;
       color: white; }
 
-.footer {
-  background: #323232; }
-
 .footer a {
   color: rgba(255, 255, 255, 0.9); }
 
@@ -162,7 +162,7 @@ ul.slider li.slide .caption {
   color: #404040; }
 
 body {
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 14px; }
 
 hr {
@@ -239,7 +239,7 @@ li {
   list-style: none; }
 
 img {
-  display: block;
+  display: inline-block;
   max-width: 100%; }
 
 .col img {
@@ -429,6 +429,117 @@ img {
 
 .depth-5 {
   box-shadow: 0px 14px 28px rgba(0, 0, 0, 0.3); }
+
+.circle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.fullscreen {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  overflow: hidden;
+  position: relative; }
+  .fullscreen.fixed:before {
+    background: inherit;
+    background-size: cover;
+    content: '';
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    opacity: 1; }
+  .fullscreen.fixed > * {
+    z-index: 1;
+    position: relative; }
+  .fullscreen.overlay-dark-grey:after {
+    background: #262626;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9; }
+  .fullscreen.overlay-dark-grey > * {
+    z-index: 1;
+    position: relative; }
+  .fullscreen.overlay-light-grey:after {
+    background: #d9d9d9;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8; }
+  .fullscreen.overlay-light-grey > * {
+    z-index: 1;
+    position: relative; }
+
+.cover {
+  background-size: cover;
+  background-position: center; }
+
+.overlay-dark-grey:after {
+  background: #262626;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.9; }
+.overlay-dark-grey > * {
+  z-index: 1;
+  position: relative; }
+
+.overlay-light-grey:after {
+  background: #d9d9d9;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8; }
+.overlay-light-grey > * {
+  z-index: 1;
+  position: relative; }
+
+.center-vertical-wrapper {
+  display: table;
+  width: 100%;
+  border-collapse: collapse; }
+  .center-vertical-wrapper .center-vertical {
+    vertical-align: middle;
+    display: table-cell; }
+
+.blur-background {
+  overflow: hidden;
+  position: relative; }
+  .blur-background:before {
+    background: inherit;
+    content: '';
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
+    filter: blur(10px); }
+  .blur-background > * {
+    z-index: 1;
+    position: relative; }
 
 .xlarge-1:not(.grid) {
   width: 8.33333%; }
@@ -1100,10 +1211,20 @@ img {
 .padding-left-xsmall {
   padding-left: 2px !important; }
 
+.banner {
+  padding-top: 64px;
+  padding-bottom: 64px; }
+  .banner h1 {
+    margin-top: 0px; }
+  .banner p {
+    opacity: 0.75;
+    margin-top: 0px; }
+
 .footer {
   padding: 32px 0px;
   color: white;
-  line-height: 32px; }
+  line-height: 32px;
+  position: relative; }
   .footer .social {
     float: right; }
     .footer .social a:hover svg.icon-facebook-circle {
@@ -1173,122 +1294,6 @@ img {
     content: ''; }
   .menu .menu-toggle {
     cursor: pointer; }
-
-.banner {
-  padding-top: 64px;
-  padding-bottom: 64px; }
-  .banner h1 {
-    margin-top: 0px; }
-  .banner p {
-    opacity: 0.75;
-    margin-top: 0px; }
-
-.fullscreen {
-  width: 100%;
-  height: 100%;
-  max-width: none;
-  background: #7346b4;
-  overflow: hidden;
-  position: relative; }
-  .fullscreen.fixed:before {
-    background: url(../img/mountains.png) no-repeat center -40px;
-    background-size: cover;
-    content: '';
-    position: fixed;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    opacity: 0.1; }
-  .fullscreen.fixed > * {
-    z-index: 1;
-    position: relative; }
-
-.cover {
-  background-size: cover;
-  background-position: center; }
-
-.center-vertical-wrapper {
-  display: table;
-  width: 100%;
-  border-collapse: collapse; }
-  .center-vertical-wrapper .center-vertical {
-    vertical-align: middle;
-    display: table-cell; }
-
-.blur-background {
-  overflow: hidden;
-  position: relative; }
-  .blur-background:before {
-    background: inherit;
-    content: '';
-    position: fixed;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    -webkit-filter: blur(10px);
-    -moz-filter: blur(10px);
-    -ms-filter: blur(10px);
-    -o-filter: blur(10px);
-    filter: blur(10px); }
-  .blur-background > * {
-    z-index: 1;
-    position: relative; }
-
-.feature {
-  display: inline-block;
-  width: 98.9%;
-  padding-top: 64px;
-  padding-bottom: 64px;
-  text-align: center; }
-  .feature .row {
-    margin-bottom: 32px; }
-  .feature img {
-    margin-left: auto;
-    margin-right: auto; }
-  .feature i {
-    font-size: 128px;
-    padding: 8px; }
-
-.profile {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  position: relative;
-  text-align: center; }
-  .profile .background {
-    height: 128px;
-    overflow: hidden;
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -ms-filter: blur(2px);
-    -o-filter: blur(2px);
-    filter: blur(2px); }
-  .profile .photo {
-    overflow: hidden;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
-    width: 128px;
-    height: 128px;
-    position: absolute;
-    top: 64px;
-    left: 50%;
-    margin-left: -64px; }
-  .profile .name {
-    margin-top: 64px;
-    padding-top: 16px;
-    font-size: 24px; }
-  .profile .url {
-    padding: 8px; }
-  .profile .description {
-    padding: 8px;
-    font-size: 12px;
-    color: rgba(0, 0, 0, 0.75); }
-  .profile .button {
-    margin: 8px; }
 
 .panel .panel-header {
   padding: 8px; }
@@ -2047,6 +2052,7 @@ select {
   box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
   vertical-align: middle;
   margin: 0px;
+  border-radius: 0px;
   -webkit-transition: all 0.1s ease;
   -moz-transition: all 0.1s ease;
   -ms-transition: all 0.1s ease;
@@ -2240,7 +2246,7 @@ textarea {
 .select {
   overflow: hidden;
   border: 1px solid #cccccc;
-  background: #f2f2f2;
+  background: white;
   display: inline-block;
   position: relative;
   height: 32px;
@@ -2250,6 +2256,7 @@ textarea {
     border: 0px;
     margin: 0px;
     height: 30px;
+    width: 100%;
     background: transparent;
     font-size: 1em;
     font-family: inherit;
@@ -2258,11 +2265,16 @@ textarea {
     padding-right: 44px;
     margin-right: -18px;
     color: inherit;
+    cursor: pointer;
     -webkit-appearance: none;
-    cursor: pointer; }
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none; }
     .select select option {
       color: black;
-      background: white; }
+      background: white;
+      font: inherit; }
   .select:after {
     content: '';
     width: 0;
@@ -2503,6 +2515,39 @@ svg {
   vertical-align: middle;
   position: relative;
   top: -1px; }
+  svg.icon-medium {
+    width: 14px;
+    height: 14px; }
+  svg.icon-large {
+    width: 16px;
+    height: 16px; }
+  svg.icon-xlarge {
+    width: 32px;
+    height: 32px; }
+
+h1 svg {
+  width: 48px;
+  height: 48px; }
+
+h2 svg {
+  width: 36px;
+  height: 36px; }
+
+h3 svg {
+  width: 30px;
+  height: 30px; }
+
+h4 svg, .banner p svg {
+  width: 24px;
+  height: 24px; }
+
+h5 svg {
+  width: 16px;
+  height: 16px; }
+
+h6 svg {
+  width: 14px;
+  height: 14px; }
 
 .table {
   overflow: auto;

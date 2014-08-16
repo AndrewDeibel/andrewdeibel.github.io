@@ -4,4 +4,53 @@ svg {
 	vertical-align: middle;
 	position: relative;
 	top: -1px;
+	&.icon-medium {
+		width: 14px;
+		height: 14px;
+	}
+	&.icon-large {
+		width: 16px;
+		height: 16px;
+	}
+	&.icon-xlarge {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+h1 {
+	svg {
+		width: 48px;
+		height: 48px;
+	}
+}
+h2 {
+	svg {
+		width: 36px;
+		height: 36px;
+	}
+}
+h3 {
+	svg {
+		width: 30px;
+		height: 30px;
+	}
+}
+h4 {
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+}
+h5 {
+	svg {
+		width: 16px;
+		height: 16px;
+	}
+}
+h6 {
+	svg {
+		width: 14px;
+		height: 14px;
+	}
 }

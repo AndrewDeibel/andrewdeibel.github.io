@@ -105,3 +105,11 @@
 	-o-user-select: none;
 	user-select: none;
 }
+// Appearance
+@mixin appearance() {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
