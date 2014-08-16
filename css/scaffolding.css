@@ -513,6 +513,48 @@ img {
   z-index: 1;
   position: relative; }
 
+.overlay-blue:after {
+  background: #4682f0;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8; }
+.overlay-blue > * {
+  z-index: 1;
+  position: relative; }
+
+.overlay-purple:after {
+  background: #7346b4;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8; }
+.overlay-purple > * {
+  z-index: 1;
+  position: relative; }
+
+.overlay-green:after {
+  background: #50a032;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8; }
+.overlay-green > * {
+  z-index: 1;
+  position: relative; }
+
 .center-vertical-wrapper {
   display: table;
   width: 100%;
@@ -520,6 +562,36 @@ img {
   .center-vertical-wrapper .center-vertical {
     vertical-align: middle;
     display: table-cell; }
+
+.bg-white-1 {
+  background: gba(255, 255, 255, 0.1); }
+
+.bg-white-2 {
+  background: rgba(255, 255, 255, 0.2); }
+
+.bg-white-3 {
+  background: rgba(255, 255, 255, 0.3); }
+
+.bg-white-4 {
+  background: rgba(255, 255, 255, 0.4); }
+
+.bg-white-5 {
+  background: rgba(255, 255, 255, 0.5); }
+
+.bg-white-6 {
+  background: rgba(255, 255, 255, 0.6); }
+
+.bg-white-7 {
+  background: rgba(255, 255, 255, 0.7); }
+
+.bg-white-8 {
+  background: rgba(255, 255, 255, 0.8); }
+
+.bg-white-9 {
+  background: rgba(255, 255, 255, 0.9); }
+
+.bg-white-10 {
+  background: white; }
 
 .blur-background {
   overflow: hidden;
@@ -1617,7 +1689,8 @@ img {
     background: #979797; }
   .button.outline {
     color: #7d7d7d;
-    background: transparent; }
+    background: transparent;
+    box-shadow: none; }
     .button.outline svg {
       fill: #7d7d7d; }
     .button.outline:hover {
@@ -1665,7 +1738,7 @@ img {
     background: #5ab338;
     border: 1px solid #5ab338; }
     .button.green svg, .button.success svg {
-      fill: #b4e2a2; }
+      fill: #5ab338; }
     .button.green:hover, .button.success:hover {
       background: #65c441; }
     .button.green.outline, .outline.button.success {
@@ -1675,7 +1748,7 @@ img {
         color: white;
         background: #5ab338; }
         .button.green.outline:hover svg, .outline.button.success:hover svg {
-          fill: #b4e2a2; }
+          fill: white; }
       .button.green.outline svg, .outline.button.success svg {
         fill: #50a032; }
     .button.green.shadow, .shadow.button.success {
@@ -1689,7 +1762,7 @@ img {
     background: #5e92f2;
     border: 1px solid #5e92f2; }
     .button.blue svg, .button.info svg {
-      fill: #ebf2fd; }
+      fill: #5e92f2; }
     .button.blue:hover, .button.info:hover {
       background: #75a2f4; }
     .button.blue.outline, .outline.button.info {
@@ -1699,7 +1772,7 @@ img {
         color: white;
         background: #5e92f2; }
         .button.blue.outline:hover svg, .outline.button.info:hover svg {
-          fill: #ebf2fd; }
+          fill: white; }
       .button.blue.outline svg, .outline.button.info svg {
         fill: #4682f0; }
     .button.blue.shadow, .shadow.button.info {
@@ -1713,7 +1786,7 @@ img {
     background: #8056bd;
     border: 1px solid #8056bd; }
     .button.purple svg {
-      fill: #d3c4e8; }
+      fill: #8056bd; }
     .button.purple:hover {
       background: #8e69c4; }
     .button.purple.outline {
@@ -1723,7 +1796,7 @@ img {
         color: white;
         background: #8056bd; }
         .button.purple.outline:hover svg {
-          fill: #d3c4e8; }
+          fill: white; }
       .button.purple.outline svg {
         fill: #7346b4; }
     .button.purple.shadow {
@@ -1737,7 +1810,7 @@ img {
     background: #e33131;
     border: 1px solid #e33131; }
     .button.red svg, .button.alert svg {
-      fill: #f5b7b7; }
+      fill: #e33131; }
     .button.red:hover, .button.alert:hover {
       background: #e64747; }
     .button.red.outline, .outline.button.alert {
@@ -1747,7 +1820,7 @@ img {
         color: white;
         background: #e33131; }
         .button.red.outline:hover svg, .outline.button.alert:hover svg {
-          fill: #f5b7b7; }
+          fill: white; }
       .button.red.outline svg, .outline.button.alert svg {
         fill: #dc1e1e; }
     .button.red.shadow, .shadow.button.alert {
@@ -1761,7 +1834,7 @@ img {
     background: #ff6b1a;
     border: 1px solid #ff6b1a; }
     .button.orange svg, .button.warning svg {
-      fill: #ffceb3; }
+      fill: #ff6b1a; }
     .button.orange:hover, .button.warning:hover {
       background: #ff7b33; }
     .button.orange.outline, .outline.button.warning {
@@ -1771,7 +1844,7 @@ img {
         color: white;
         background: #ff6b1a; }
         .button.orange.outline:hover svg, .outline.button.warning:hover svg {
-          fill: #ffceb3; }
+          fill: white; }
       .button.orange.outline svg, .outline.button.warning svg {
         fill: #ff5a00; }
     .button.orange.shadow, .shadow.button.warning {
@@ -1785,7 +1858,7 @@ img {
     background: #ffbc2e;
     border: 1px solid #ffbc2e; }
     .button.yellow svg {
-      fill: #ffedc6; }
+      fill: #ffbc2e; }
     .button.yellow:hover {
       background: #ffc447; }
     .button.yellow.outline {
@@ -1795,7 +1868,7 @@ img {
         color: white;
         background: #ffbc2e; }
         .button.yellow.outline:hover svg {
-          fill: #ffedc6; }
+          fill: white; }
       .button.yellow.outline svg {
         fill: #ffb414; }
     .button.yellow.shadow {
@@ -1833,7 +1906,7 @@ img {
     background: #8a8a8a;
     border: 1px solid #8a8a8a; }
     .button.gray svg {
-      fill: #d6d6d6; }
+      fill: #8a8a8a; }
     .button.gray:hover {
       background: #979797; }
     .button.gray.outline {
@@ -1843,7 +1916,7 @@ img {
         color: white;
         background: #8a8a8a; }
         .button.gray.outline:hover svg {
-          fill: #d6d6d6; }
+          fill: white; }
       .button.gray.outline svg {
         fill: #7d7d7d; }
     .button.gray.shadow {
@@ -1857,7 +1930,7 @@ img {
     background: #0d0d0d;
     border: 1px solid #0d0d0d; }
     .button.black svg {
-      fill: #595959; }
+      fill: #0d0d0d; }
     .button.black:hover {
       background: #1a1a1a; }
     .button.black.outline {
@@ -1867,7 +1940,7 @@ img {
         color: white;
         background: #0d0d0d; }
         .button.black.outline:hover svg {
-          fill: #595959; }
+          fill: white; }
       .button.black.outline svg {
         fill: black; }
     .button.black.shadow {
@@ -1881,7 +1954,7 @@ img {
     background: #ff91e9;
     border: 1px solid #ff91e9; }
     .button.primary svg {
-      fill: white; }
+      fill: #ff91e9; }
     .button.primary:hover {
       background: #ffaaee; }
     .button.primary.outline {
@@ -1905,7 +1978,7 @@ img {
     background: #0fe687;
     border: 1px solid #0fe687; }
     .button.secondary svg {
-      fill: #95f8cd; }
+      fill: #0fe687; }
     .button.secondary:hover {
       background: #1df194; }
     .button.secondary.outline {
@@ -1915,7 +1988,7 @@ img {
         color: white;
         background: #0fe687; }
         .button.secondary.outline:hover svg {
-          fill: #95f8cd; }
+          fill: white; }
       .button.secondary.outline svg {
         fill: #0dce79; }
     .button.secondary.shadow {
@@ -2012,7 +2085,6 @@ img {
 
 input[type="text"], input[type="password"], input[type="email"], input[type="search"] {
   border: 1px solid #cccccc;
-  background: white;
   height: 32px;
   font-size: 1em;
   font-family: inherit;
@@ -2074,6 +2146,15 @@ select {
 
 :-ms-input-placeholder {
   color: #a6a6a6; }
+
+.bg-white-4::-webkit-input-placeholder {
+  color: white; }
+.bg-white-4:-moz-placeholder {
+  color: white; }
+.bg-white-4::-moz-placeholder {
+  color: white; }
+.bg-white-4:-ms-input-placeholder {
+  color: white; }
 
 textarea {
   resize: vertical;
@@ -2514,7 +2595,12 @@ svg {
   height: 14px;
   vertical-align: middle;
   position: relative;
-  top: -1px; }
+  top: -2px;
+  -webkit-transition: fill 5s ease;
+  -moz-transition: fill 5s ease;
+  -ms-transition: fill 5s ease;
+  -o-transition: fill 5s ease;
+  transition: fill 5s ease; }
   svg.icon-medium {
     width: 14px;
     height: 14px; }

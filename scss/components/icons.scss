@@ -3,7 +3,8 @@ svg {
 	height: 14px;
 	vertical-align: middle;
 	position: relative;
-	top: -1px;
+	top: -2px;
+	@include transition(fill, 5s, ease);
 	&.icon-medium {
 		width: 14px;
 		height: 14px;

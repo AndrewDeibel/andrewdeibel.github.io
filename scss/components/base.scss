@@ -249,6 +249,57 @@ img {
 		position: relative;
 	}
 }
+.overlay-blue {
+	&:after {
+		background: $blue;
+		background-size: cover;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0.8;
+	}
+	> * {
+		z-index: 1;
+		position: relative;
+	}
+}
+.overlay-purple {
+	&:after {
+		background: $purple;
+		background-size: cover;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0.8;
+	}
+	> * {
+		z-index: 1;
+		position: relative;
+	}
+}
+.overlay-green {
+	&:after {
+		background: $green;
+		background-size: cover;
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0.8;
+	}
+	> * {
+		z-index: 1;
+		position: relative;
+	}
+}
 
 
 
@@ -262,6 +313,18 @@ img {
 		display: table-cell;
 	}
 }
+
+
+.bg-white-1 { background: gba(255,255,255,0.1) }
+.bg-white-2 { background: rgba(255,255,255,0.2) }
+.bg-white-3 { background: rgba(255,255,255,0.3) }
+.bg-white-4 { background: rgba(255,255,255,0.4) }
+.bg-white-5 { background: rgba(255,255,255,0.5) }
+.bg-white-6 { background: rgba(255,255,255,0.6) }
+.bg-white-7 { background: rgba(255,255,255,0.7) }
+.bg-white-8 { background: rgba(255,255,255,0.8) }
+.bg-white-9 { background: rgba(255,255,255,0.9) }
+.bg-white-10 { background: rgba(255,255,255,1) }
 
 
 
