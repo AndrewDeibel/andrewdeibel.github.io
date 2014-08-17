@@ -31,6 +31,72 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/img\/fog-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 232146,
+		"inputAbbreviatedPath": "\/img\/fog-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/fog-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/mountains-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 169676,
+		"inputAbbreviatedPath": "\/img\/mountains-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/mountains-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/mountains.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.54133e+06,
+		"inputAbbreviatedPath": "\/img\/mountains.png",
+		"outputAbbreviatedPath": "\/img\/mountains.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/profile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35393,
+		"inputAbbreviatedPath": "\/img\/profile.jpg",
+		"outputAbbreviatedPath": "\/img\/profile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/triangles.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66324,
+		"inputAbbreviatedPath": "\/img\/triangles.jpg",
+		"outputAbbreviatedPath": "\/img\/triangles.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/Waves.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.05691e+06,
+		"inputAbbreviatedPath": "\/img\/Waves.jpg",
+		"outputAbbreviatedPath": "\/img\/Waves.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
