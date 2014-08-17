@@ -157,21 +157,12 @@ img {
 	overflow: hidden;
 	position: relative;
 	&.fixed {
-		&:before {
-			background: inherit;
-			background-size: cover;
-			content: '';
-			position: fixed;
-			top: -20px;
-			left: -20px;
-			right: -20px;
-			bottom: -20px;
-			opacity: 1;
-		}
-		> * {
-			z-index: 1;
-			position: relative;
-		}
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		opacity: 1;
 	}
 	&.overlay-dark-grey {
 		&:after {
