@@ -161,9 +161,6 @@ ul.slider li.slide .caption {
   border: 1px solid #e6e6e6;
   color: #404040; }
 
-html {
-  -webkit-transform: translate3d(0, 0, 0); }
-
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px; }
