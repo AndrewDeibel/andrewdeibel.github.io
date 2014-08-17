@@ -296,12 +296,16 @@ img {
 
 
 .center-vertical-wrapper {
-	display: table;
-	width: 100%;
-	border-collapse: collapse;
-	.center-vertical {
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
 		vertical-align: middle;
-		display: table-cell;
+		margin-right: -4px;
+	}
+	.center-vertical {
+		display: inline-block;
+		vertical-align: middle;
 	}
 }
 

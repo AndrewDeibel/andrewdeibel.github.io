@@ -549,13 +549,15 @@ img {
   z-index: 1;
   position: relative; }
 
-.center-vertical-wrapper {
-  display: table;
-  width: 100%;
-  border-collapse: collapse; }
-  .center-vertical-wrapper .center-vertical {
-    vertical-align: middle;
-    display: table-cell; }
+.center-vertical-wrapper:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; }
+.center-vertical-wrapper .center-vertical {
+  display: inline-block;
+  vertical-align: middle; }
 
 .bg-white-1 {
   background: gba(255, 255, 255, 0.1); }
