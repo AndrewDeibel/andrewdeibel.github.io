@@ -85,12 +85,12 @@ img {
 
 b {font-weight: bold !important}
 .bold {font-weight: bold !important}
-.weight-200 {font-weight: 200 !important}
-.weight-300 {font-weight: 300 !important}
-.weight-400 {font-weight: 400 !important}
-.weight-600 {font-weight: 600 !important}
-.weight-700 {font-weight: 700 !important}
-.weight-900 {font-weight: 900 !important}
+.weight--1 {font-weight: 200 !important}
+.weight-0 {font-weight: 300 !important}
+.weight-1 {font-weight: 400 !important}
+.weight-2 {font-weight: 600 !important}
+.weight-3 {font-weight: 700 !important}
+.weight-4 {font-weight: 900 !important}
 
 .none {display: none !important}
 .block {display: block !important}
@@ -118,12 +118,41 @@ b {font-weight: bold !important}
 .bg-black {background: $black}
 .bg-white {background: $white}
 
-.color-orange {color: $orange}
-.color-yellow {color: $yellow}
-.color-white {color: $white}
-.color-grey {color: $grey}
-.color-black {color: $black}
-.color-white {color: $white}
+.bg-white-gradient {@include gradient(darken($grey, 5%), darken($grey, 15%))}
+.bg-light-grey-gradient {@include gradient(darken($grey, 15%), darken($grey, 25%))}
+.bg-grey-gradient {@include gradient(darken($grey, 25%), darken($grey, 35%))}
+.bg-dark-grey-gradient {@include gradient(darken($grey, 35%), darken($grey, 45%))}
+
+.color-orange {
+	color: $orange;
+	svg {
+		fill: $orange;
+	}
+}
+.color-yellow {
+	color: $yellow;
+	svg {
+		fill: $yellow;
+	}
+}
+.color-grey {
+	color: $grey;
+	svg {
+		fill: $grey;
+	}
+}
+.color-black {
+	color: $black;
+	svg {
+		fill: $black;
+	}
+}
+.color-white {
+	color: $white;
+	svg {
+		fill: $white;
+	}
+}
 
 .fill-orange {fill: $orange}
 .fill-yellow {fill: $yellow}
@@ -137,6 +166,8 @@ b {font-weight: bold !important}
 .border-right {border-right: 1px solid rgba(0,0,0,0.2)}
 .border-bottom {border-bottom: 1px solid rgba(0,0,0,0.2)}
 .border-left {border-left: 1px solid rgba(0,0,0,0.2)}
+.border-white {border-color: $white}
+.border-medium {border-width: 4px}
 
 .depth-1 {box-shadow: 0px 1px 2px rgba(0,0,0,0.3)}
 .depth-2 {box-shadow: 0px 3px 6px rgba(0,0,0,0.3)}

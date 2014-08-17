@@ -66,22 +66,6 @@ select {
 }
 
 
-.bg-white-4 {
-	&::-webkit-input-placeholder {
-	   color: white;
-	}
-	&:-moz-placeholder {
-	   color: white;
-	}
-	&::-moz-placeholder {
-	   color: white; 
-	}
-	&:-ms-input-placeholder {  
-	   color: white;
-	}
-}
-
-
 textarea {
 	resize: vertical;
 	border: 1px solid darken($white, 20%);

@@ -1,0 +1,28 @@
+.overlay-dark-grey h4, .overlay-dark-grey p {
+  color: gray;
+}
+
+.overlay-light-grey h4, .overlay-light-grey p {
+  color: #404040;
+}
+
+.overlay-blue h4, .overlay-blue p {
+  color: #bcd2fa;
+}
+
+.overlay-purple h4, .overlay-purple p {
+  color: #b7a0da;
+}
+
+.overlay-green h4, .overlay-green p {
+  color: #94d67c;
+}
+
+html {
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+svg {
+  -webkit-filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.5));
+}
