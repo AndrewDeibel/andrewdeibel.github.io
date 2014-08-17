@@ -5,17 +5,25 @@ svg {
 	position: relative;
 	top: -2px;
 	@include transition(fill, 5s, ease);
-	&.icon-medium {
+	&.icon-xsmall {
 		width: 14px;
 		height: 14px;
 	}
+	&.icon-small {
+		width: 18px;
+		height: 18px;
+	}
+	&.icon-medium {
+		width: 24px;
+		height: 24px;
+	}
 	&.icon-large {
-		width: 16px;
-		height: 16px;
+		width: 64px;
+		height: 64px;
 	}
 	&.icon-xlarge {
-		width: 32px;
-		height: 32px;
+		width: 80px;
+		height: 80px;
 	}
 }
 

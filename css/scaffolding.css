@@ -2597,15 +2597,21 @@ svg {
   -ms-transition: fill 5s ease;
   -o-transition: fill 5s ease;
   transition: fill 5s ease; }
-  svg.icon-medium {
+  svg.icon-xsmall {
     width: 14px;
     height: 14px; }
+  svg.icon-small {
+    width: 18px;
+    height: 18px; }
+  svg.icon-medium {
+    width: 24px;
+    height: 24px; }
   svg.icon-large {
-    width: 16px;
-    height: 16px; }
+    width: 64px;
+    height: 64px; }
   svg.icon-xlarge {
-    width: 32px;
-    height: 32px; }
+    width: 80px;
+    height: 80px; }
 
 h1 svg {
   width: 48px;
