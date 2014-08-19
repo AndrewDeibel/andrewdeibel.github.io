@@ -1,4 +1,5 @@
 input {
+	font-family: inherit;
 	&[type="text"], &[type="password"], &[type="email"], &[type="search"] {
 		border: 1px solid darken($white, 20%);
 		height: 32px;

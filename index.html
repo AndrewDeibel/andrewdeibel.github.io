@@ -12,17 +12,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
 <body id="page-home">
-	<div class="fullscreen center-vertical-wrapper align-center bg-dark-grey-gradient color-white" id="about">
+	<div class="fullscreen center-vertical-wrapper align-center" id="about">
 		<div class="center-vertical padding-top-xlarge padding-bottom-xlarge">
 			<div class="max">
-				<img src="img/profile.jpg" class="circle border border-white border-medium" width="200" height="200">
+				<img src="img/profile.jpg" id="profile" class="circle" width="200" height="200">
 				<h1 class="weight-1">Hello, my name is Andrew Deibel.</h1>
 				<h4>I'm the lead user interface developer at My Custom Event, living in Spokane, WA. I design interfaces, program front end web frameworks, and design graphics for a wide range of applications.</p>
 				<h4>I <svg class="icon-heart"><use xlink:href="#icon-heart"></use></svg> design.</h4>
 			</div>
 		</div>
 	</div>
-	<div class="fullscreen center-vertical-wrapper align-center bg-grey-gradient color-white" id="expertise">
+	<div class="fullscreen center-vertical-wrapper align-center" id="expertise">
 		<div class="center-vertical padding-top-xlarge padding-bottom-xlarge">
 			<div class="max">
 				<h1 class="weight-1">My Expertise</h1>
@@ -46,7 +46,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="fullscreen center-vertical-wrapper align-center bg-light-grey-gradient color-white" id="latest">
+	<div class="fullscreen center-vertical-wrapper align-center" id="latest">
 		<div class="center-vertical padding-top-xlarge padding-bottom-xlarge">
 			<div class="max">
 				<h1 class="weight-1">Latest Project</h1>
@@ -57,7 +57,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="fullscreen center-vertical-wrapper align-center bg-white-gradient color-white" id="code">
+	<div class="fullscreen center-vertical-wrapper align-center" id="code">
 		<div class="center-vertical padding-top-xlarge padding-bottom-xlarge">
 			<div class="max">
 				<h1 class="weight-1">Code</h1>
@@ -84,7 +84,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="fullscreen center-vertical-wrapper align-center bg-white-gradient" id="design">
+	<div class="fullscreen center-vertical-wrapper align-center" id="design">
 		<div class="center-vertical padding-top-xlarge padding-bottom-xlarge">
 			<div class="max">
 				<h1 class="weight-1">Design</h1>
@@ -111,26 +111,26 @@
 			</div>
 		</div>
 	</div>
-	<div class="fullscreen center-vertical-wrapper align-center bg-white-gradient" id="contact">
+	<div class="fullscreen center-vertical-wrapper align-center" id="contact">
 		<div class="center-vertical padding-top-xlarge padding-bottom-xlarge">
 			<div class="max">
 				<h1 class="weight-1">Contact</h1>
 				<h4>While I'm unavailable for new projects at this time, please feel free to say hello by sending me an email. I look forward to hearing from you.</h4>
 				<div class="center xlarge-8 large-10 medium-12 margin-top-xlarge">
-					<fieldset class="form grid padded">
-						<div class="col xlarge-6 small-12">
-							<input type="text" placeholder="Name" class="round bg-white-4">
-						</div>
-						<div class="col xlarge-6 small-12">
-							<input type="email" placeholder="Email" class="round bg-white-4">
-						</div>
-						<div class="col xlarge-12">
-							<textarea placeholder="Message" class="round bg-white-4"></textarea>
-						</div>
-					</fieldset>
-					<a class="button outline round white large margin-top-large bg-white-4">
-						Send
-					</a>
+					<form action="//forms.brace.io/adeibel5@gmail.com">
+						<fieldset class="form grid padded">
+							<div class="col xlarge-6 small-12">
+								<input type="text" placeholder="Name" class="round bg-white-4">
+							</div>
+							<div class="col xlarge-6 small-12">
+								<input type="email" name="_replyto" placeholder="Email" class="round bg-white-4">
+							</div>
+							<div class="col xlarge-12">
+								<textarea placeholder="Message" name="body" class="round bg-white-4"></textarea>
+							</div>
+						</fieldset>
+						<input class="button flat round large margin-top-large bg-white-4" type="submit" value="Send">
+					</form>
 				</div>
 			</div>
 		</div>
