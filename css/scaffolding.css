@@ -3738,8 +3738,7 @@ h6 svg {
   font-style: italic;
 }
 .image-wrapper .caption.below {
-  top: 100%;
-  bottom: auto;
+  position: relative;
 }
 
 #lightbox-overlay {
