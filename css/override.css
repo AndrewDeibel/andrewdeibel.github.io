@@ -54,6 +54,9 @@
 #latest svg {
   fill: #d03333;
 }
+#latest .scroll-top svg {
+  fill: #101010;
+}
 #latest h1, #latest h4 {
   color: white;
 }
@@ -143,6 +146,23 @@
   z-index: 2;
 }
 .scroll svg {
+  width: 32px;
+  height: 32px;
+}
+.scroll svg.double {
+  position: absolute;
+  top: -12px;
+  left: 0px;
+}
+
+.scroll-top {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -16px;
+  z-index: 2;
+}
+.scroll-top svg {
   width: 32px;
   height: 32px;
 }

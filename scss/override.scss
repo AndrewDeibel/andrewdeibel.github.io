@@ -38,6 +38,9 @@
 	svg {
 		fill: rgb(208, 51, 51);
 	}
+	.scroll-top svg {
+		fill: rgb(16, 16, 16);
+	}
 	h1, h4 {
 		color: white;
 	}
@@ -108,6 +111,22 @@
 .scroll {
 	position: absolute;
 	bottom: 8px;
+	left: 50%;
+	margin-left: -16px;
+	z-index: 2;
+	svg {
+		width: 32px;
+		height: 32px;
+		&.double {
+			position: absolute;
+			top: -12px;
+			left: 0px;
+		}
+	}
+}
+.scroll-top {
+	position: absolute;
+	top: 16px;
 	left: 50%;
 	margin-left: -16px;
 	z-index: 2;
