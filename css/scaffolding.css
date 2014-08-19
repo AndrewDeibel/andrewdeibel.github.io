@@ -211,13 +211,6 @@ p {
   margin-bottom: 8px;
 }
 
-br {
-  margin-bottom: 8px;
-  clear: both;
-  content: '';
-  display: block;
-}
-
 a {
   text-decoration: none;
   cursor: pointer;
@@ -3717,7 +3710,7 @@ h6 svg {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  width: 100%;
+  max-width: 100%;
 }
 
 #lightbox img {

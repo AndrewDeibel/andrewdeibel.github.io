@@ -1,10 +1,10 @@
 #about {
   background: #f2f2f2;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#e6e6e6));
-  background: -webkit-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background: -moz-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background: -ms-linear-gradient(top, #f2f2f2, #e6e6e6);
-  background: -o-linear-gradient(top, #f2f2f2, #e6e6e6);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#d9d9d9));
+  background: -webkit-linear-gradient(top, #f2f2f2, #d9d9d9);
+  background: -moz-linear-gradient(top, #f2f2f2, #d9d9d9);
+  background: -ms-linear-gradient(top, #f2f2f2, #d9d9d9);
+  background: -o-linear-gradient(top, #f2f2f2, #d9d9d9);
   color: #90A2AD;
   text-shadow: 0px 1px 1px white;
 }
@@ -12,11 +12,13 @@
   fill: #d03333;
 }
 #about h1 {
-  color: #738997;
+  color: #5b6f7c;
+}
+#about h4 {
+  font-weight: 400;
 }
 #about #profile {
-  border: 4px solid white;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 6px #5b6f7c, 0 0 0 12px #90a2ad, 0 0 0 18px #cbd3d8;
 }
 
 #expertise {
@@ -36,7 +38,7 @@
   color: #f7fafb;
 }
 #expertise p {
-  color: rgba(231, 238, 243, 0.5);
+  color: rgba(231, 238, 243, 0.75);
 }
 
 #latest {

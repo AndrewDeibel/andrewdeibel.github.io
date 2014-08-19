@@ -1,18 +1,20 @@
 @import"components/mixins";
 
 #about {
-	@include gradient(darken(white, 5%), darken(white, 10%));
+	@include gradient(darken(white, 5%), darken(white, 15%));
 	color: #90A2AD;
 	text-shadow: 0px 1px 1px white;
 	svg {
 		fill: rgb(208, 51, 51);
 	}
 	h1 {
-		color: darken(#90A2AD, 10%);
+		color: darken(#90A2AD, 20%);
+	}
+	h4 {
+		font-weight: 400;
 	}
 	#profile {
-		border: 4px solid white;
-		box-shadow: 0px 1px 4px rgba(0,0,0,0.25);
+		box-shadow: 0 0 0 6px darken(#90A2AD, 20%), 0 0 0 12px #90A2AD, 0 0 0 18px lighten(#90A2AD, 20%);
 	}
 }
 #expertise {
@@ -26,7 +28,7 @@
 		color: rgb(247, 250, 251);
 	}
 	p {
-		color: rgba(231, 238, 243, 0.5);
+		color: rgba(231, 238, 243, 0.75);
 	}
 }
 #latest {
