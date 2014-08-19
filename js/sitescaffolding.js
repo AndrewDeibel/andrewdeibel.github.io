@@ -298,6 +298,18 @@ $(function() {
 		$(this).addClass('active');
 	});
 
+
+
+	// Scroll to anchor
+	$('a[href^="#"]').click(function(){
+	    $('html, body').animate({
+	        scrollTop: $( $(this).attr('href') ).offset().top
+	    }, 'slow');
+	    return false;
+	});
+
+
+
 	// Rating
 	$('.rating label').hover(function() {
 		$(this).prevAll('label').toggleClass('hover');

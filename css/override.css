@@ -52,7 +52,7 @@
   color: white;
 }
 #latest svg {
-  fill: white;
+  fill: #d03333;
 }
 #latest h1, #latest h4 {
   color: white;
@@ -91,6 +91,9 @@
 #code h4 {
   color: rgba(255, 255, 255, 0.5);
 }
+#code svg {
+  fill: rgba(255, 255, 255, 0.5);
+}
 
 #design {
   background: #1c1c1c;
@@ -103,6 +106,9 @@
 }
 #design h1 {
   color: #c5c5c5;
+}
+#design svg {
+  fill: #686867;
 }
 
 #contact {
@@ -121,7 +127,22 @@
 #contact .button:hover {
   background: #eb3b40;
 }
+#contact svg {
+  fill: #2f3f4e;
+}
 
 .footer {
   background: #252525;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  margin-left: -16px;
+  z-index: 2;
+}
+.scroll svg {
+  width: 32px;
+  height: 32px;
 }
