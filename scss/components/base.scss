@@ -74,6 +74,15 @@ img {
 .align-center {text-align: center !important}
 .center {margin: 0 auto}
 
+@media (max-width: $screen-medium) {
+	.medium-center {
+		margin: 0 auto;
+	}
+	.grid .col.medium-center {
+		float: none;
+	}
+}
+
 .absolute {position: absolute !important}
 .relative {position: relative !important}
 
