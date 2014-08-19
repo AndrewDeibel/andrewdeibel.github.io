@@ -3680,6 +3680,68 @@ h6 svg {
   padding-left: 72px;
 }
 
+.image-wrapper {
+  position: relative;
+  display: block;
+}
+.image-wrapper .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 6px;
+}
+.image-wrapper .caption h1 {
+  color: white;
+  font-weight: 400;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.image-wrapper .caption h2 {
+  color: white;
+  font-weight: 400;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.image-wrapper .caption h3 {
+  color: white;
+  font-weight: 400;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.image-wrapper .caption h4, .image-wrapper .caption .banner p, .banner .image-wrapper .caption p {
+  color: white;
+  font-weight: 400;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.image-wrapper .caption h5 {
+  color: white;
+  font-weight: 400;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.image-wrapper .caption h6 {
+  color: white;
+  font-weight: 400;
+  margin: 0px;
+  text-transform: uppercase;
+}
+.image-wrapper .caption p {
+  color: #a6a6a6;
+  margin: 0px;
+}
+.image-wrapper .caption a {
+  color: #4682f0;
+  font-style: italic;
+}
+.image-wrapper .caption.below {
+  top: 100%;
+  bottom: auto;
+}
+
 #lightbox-overlay {
   position: fixed;
   top: 0;
