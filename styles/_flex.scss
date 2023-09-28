@@ -1,0 +1,24 @@
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.gap {
+  gap: $spacing-half;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+  .width-#{$i} {
+    width: 100% / 12 * $i;
+  }
+  .height-#{$i} {
+    height: 100% / 12 * $i;
+  }
+}

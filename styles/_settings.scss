@@ -1,0 +1,25 @@
+$blue: #1e3653;
+$gold: #e1a730;
+$white: white;
+$black: black;
+
+$colors: (
+  blue: $blue,
+  white: $white,
+  black: $black,
+  gold: $gold,
+);
+
+$spacing: 16px;
+$spacing-half: $spacing / 2;
+$spacing-double: $spacing * 2;
+
+$border-radius: 4px;
+
+$shadow: 0 4px 8px rgba(black, 0.2);
+$body-background: darken(white, 5%);
+
+$button-border-radius: 4px;
+$button-background: $blue;
+$button-border: 1px solid $blue;
+$button-color: white;
