@@ -552,6 +552,11 @@ p {
   color: white;
   cursor: pointer;
   display: inline-block;
+  text-decoration: none;
+  transition: ease all 0.2s;
+}
+.button:hover, .button:focus {
+  background: #2c4e78;
 }
 
 .grid {

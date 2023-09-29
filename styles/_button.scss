@@ -7,4 +7,10 @@
   color: $button-color;
   cursor: pointer;
   display: inline-block;
+  text-decoration: none;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    background: lighten($button-background, 10%);
+  }
 }
